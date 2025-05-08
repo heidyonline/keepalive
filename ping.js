@@ -11,7 +11,7 @@ function sleep(ms) {
   console.log(`\n[${time}] Starting randomized ping...`);
 
   for (const url of urls) {
-    const delay = Math.floor(Math.random() * 5 * 60 * 1000); // 0–5 mins
+    const delay = Math.floor(Math.random() * 10 * 60 * 1000); // 0–10 mins
     console.log(`⏳ Waiting ${delay / 1000}s before pinging: ${url}`);
     await sleep(delay);
 
